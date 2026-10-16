@@ -1,0 +1,28 @@
+# Homework_Rep
+//stores homework
+
+#include <time.h>
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(void){
+  int usernumb = 0;
+  int prime = 1;
+
+  printf("What range of prime numbers would you like?");
+  scanf("%d", &usernumb);
+
+  for (int i = 2; i <= usernumb i++){
+    prime = 1;
+    for (int j = 2; j < 1; j++){
+      if (i % j == 0){
+        prime = 0;
+      }
+    }
+      if (prime == 1){
+        printf("%d", i);
+      }
+    }
+  return 0;
+}
