@@ -1,0 +1,75 @@
+# Homework_Rep
+//stores homework
+
+#include <time.h>
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(void){
+  int choice;
+  printf("What would you like to look at?\n (1) Starters\n (2) Mains\n (3) Desserts\n (4) Drinks\n\n ")
+  scanf("%d", &choice);
+
+  switch (choice){
+    case 1:
+      printf("Starters:\n");
+      printf("1.Garlic Bread\n");
+      printf("2.Bruschetta\n");
+      printf("3.Pita Bread\n");
+      printf("4.Prawn Cocktail\n");
+      printf("5.Soup\n");
+      int starterchoice;
+      printf("choose a starter (1-5):");
+      scanf("%d", &starterchoice);
+      switch (starterchoice){
+        case 1:
+          printf("Garlic Bread - Toasted bread with garlic butter (+/- cheese));
+          break;
+          case 2:
+          printf("Bruschetta - Toasted bread topped with tomatoes");
+          break;
+          case 3:
+          printf("Pita Bread - Fluffy bread served with tzatziki");
+          break;
+          case 4:
+          printf("Prawn Cocktail - Prawns served with a cocktail sauce");
+          break;
+          case 5:
+          printf("Soup - Soup of the day");
+          break;
+          default:
+            printf("Error...")
+            break;
+      }
+    break;
+    case 2:
+      printf("Mains:\n");
+      printf("1.Burger\n");
+      printf("2.Pizza\n");
+      printf("3.Pasta\n");
+      printf("4.Fish and Chips\n");
+      printf("5.Curry\n");
+      break;
+    case 3:
+      printf("Desserts:\n");
+      printf("1.Brownie\n");
+      printf("2.Cake\n");
+      printf("3.IceCream\n");
+      printf("4.CheeseCake\n");
+      printf("5.ApplePie\n");
+      break;
+    case 4:
+      printf("Drinks:\n");
+      printf("1.Water\n");
+      printf("2.Coke\n");
+      printf("3.Orange Juice\n");
+      printf("4.Lemonaid\n");
+      printf("5.Milkshake\n");
+      break;
+    default:
+      printf("Error...");
+      break;
+  }
+  return 0;
+}
