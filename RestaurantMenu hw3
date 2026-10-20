@@ -72,6 +72,7 @@ int main(void){
           default:
             printf("Error...")
             break;
+      }
     case 3:
       printf("Desserts:\n");
       printf("1.Brownie\n");
@@ -101,6 +102,7 @@ int main(void){
           default:
             printf("Error...")
             break;
+      }
     case 4:
       printf("Drinks:\n");
       printf("1.Water\n");
