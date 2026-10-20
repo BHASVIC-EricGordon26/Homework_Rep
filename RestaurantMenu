@@ -50,7 +50,28 @@ int main(void){
       printf("3.Pasta\n");
       printf("4.Fish and Chips\n");
       printf("5.Curry\n");
-      break;
+      int starterchoice;
+      printf("choose a starter (1-5):");
+      scanf("%d", &starterchoice);
+      switch (starterchoice){
+        case 1:
+          printf("Burger - Toasted buns with beef and onions (+/- cheese));
+          break;
+          case 2:
+          printf("Pizza - Pizza base with tomato sauce and mozzarella cheese");
+          break;
+          case 3:
+          printf("Pasta - Long pasta noodles coated in a meat sauce");
+          break;
+          case 4:
+          printf("Fish and Chips - Crispy battered cod paired with a portion of chips");
+          break;
+          case 5:
+          printf("Curry - Chicken curry combined with a sweet tomato sauce");
+          break;
+          default:
+            printf("Error...")
+            break;
     case 3:
       printf("Desserts:\n");
       printf("1.Brownie\n");
@@ -58,7 +79,28 @@ int main(void){
       printf("3.IceCream\n");
       printf("4.CheeseCake\n");
       printf("5.ApplePie\n");
-      break;
+      int starterchoice;
+      printf("choose a starter (1-5):");
+      scanf("%d", &starterchoice);
+      switch (starterchoice){
+        case 1:
+          printf("Brownie - Soft and delicious chocolate brownie paired with vanilla ice cream");
+          break;
+          case 2:
+          printf("Cake - A choice between Victoria sponge cake, Chocolate or Carrot cake");
+          break;
+          case 3:
+          printf("Ice Cream - A choice between Strawberry, Chocolate or Vanilla");
+          break;
+          case 4:
+          printf("CheeseCake - Crumbly crust with a soft and delcious centre");
+          break;
+          case 5:
+          printf("Apple Pie - A sweet apple pie topped with glazed apples and cinnamon");
+          break;
+          default:
+            printf("Error...")
+            break;
     case 4:
       printf("Drinks:\n");
       printf("1.Water\n");
