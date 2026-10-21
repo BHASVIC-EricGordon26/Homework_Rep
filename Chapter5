@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void){
+    int nums[10], guess = 0;
+
+    for(int x = 0; x<10; x++){
+        printf("Please enter number %d", x+1);
+        fflush(stdin);
+        scanf("%d", &nums[x]);
+    }
+    printf("Which index would you like to check:");
+    fflush(stdin);
+    scanf("%d", &guess);
+
+    printf("Index %d is %d\n", guess, nums[guess]);
+    return 0;
+}
